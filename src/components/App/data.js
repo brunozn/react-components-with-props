@@ -1,28 +1,74 @@
 export default [
   {
-    name: "Lion",
-    scientificName: "Panthero leo",
-    size: 140,
-    diet: ["meat"],
-  },
-  {
-    name: "Gorilla",
-    scientificName: "Gorilla beringei",
-    size: 205,
-    diet: ["plants", "insects"],
-    additional: {
-      notes:
-        "This is the eastern gorilla. There is also a western gorilla that is a different species.",
+    name: "Bruno",
+    lastName: "José",
+    enteredInto: "00/00/2019",
+    valuePayable: 0.0,
+    currentDebt: 0.0,
+    payment: {
+      valuePaid: 0.0,
+      paymentDate: "00/00/2019",
+      FormOfPayment: "DepositoBB",
     },
   },
   {
-    name: "Zebra",
-    scientificName: "Equus quagga",
-    size: 322,
-    diet: ["plants"],
+    name: "Bruna",
+    lastName: "Fernandes",
+    enteredInto: "00/00/2019",
+    valuePayable: 0.0,
+    currentDebt: 0.0,
+    payment: {
+      valuePaid: 0.0,
+      paymentDate: "00/00/2019",
+      FormOfPayment: "DepositoBB",
+    },
     additional: {
-      notes: "There are three different species of zebra.",
-      link: "https://en.wikipedia.org/wiki/Zebra",
+      notes: "Notas",
+    },
+  },
+  {
+    name: "Karol",
+    lastName: "Lima",
+    enteredInto: "00/00/2019",
+    valuePayable: 0.0,
+    currentDebt: 0.0,
+    payment: {
+      valuePaid: 0.0,
+      paymentDate: "00/00/2019",
+      FormOfPayment: "DepositoBB",
+    },
+    additional: {
+      notes: "Notas",
+    },
+  },
+  {
+    name: "Emerson",
+    lastName: "Lima",
+    enteredInto: "00/00/2019",
+    valuePayable: 0.0,
+    currentDebt: 0.0,
+    payment: {
+      valuePaid: 0.0,
+      paymentDate: "00/00/2019",
+      FormOfPayment: "DepositoBB",
+    },
+    additional: {
+      notes: "Notas",
+    },
+  },
+  {
+    name: "Igor",
+    lastName: "Ramon",
+    enteredInto: "00/00/2019",
+    valuePayable: 0.0,
+    currentDebt: 0.0,
+    payment: {
+      valuePaid: 0.0,
+      paymentDate: "00/00/2019",
+      FormOfPayment: "DepositoBB",
+    },
+    additional: {
+      notes: "Notas",
     },
   },
 ];
