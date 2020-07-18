@@ -1,24 +1,19 @@
 export default [
   {
     name: "Bruno",
-    lastName: "José",
+    lastName: "Jose",
     enteredInto: "00/00/2019",
     valuePayable: 0.0,
     currentDebt: 0.0,
-    payment: {
-      valuePaid: 0.0,
-      paymentDate: "00/00/2019",
-      FormOfPayment: "DepositoBB",
-    },
   },
   {
     name: "Bruna",
     lastName: "Fernandes",
-    enteredInto: "00/00/2019",
-    valuePayable: 0.0,
-    currentDebt: 0.0,
+    //enteredInto: "00/00/2019",
+    //valuePayable: 0.0,
+    //currentDebt: 0.0,
     payment: {
-      valuePaid: 0.0,
+      valuePaid: 30,
       paymentDate: "00/00/2019",
       FormOfPayment: "DepositoBB",
     },
@@ -33,7 +28,7 @@ export default [
     valuePayable: 0.0,
     currentDebt: 0.0,
     payment: {
-      valuePaid: 0.0,
+      valuePaid: 36,
       paymentDate: "00/00/2019",
       FormOfPayment: "DepositoBB",
     },
@@ -44,13 +39,13 @@ export default [
   {
     name: "Emerson",
     lastName: "Lima",
-    enteredInto: "00/00/2019",
-    valuePayable: 0.0,
-    currentDebt: 0.0,
+    //enteredInto: "00/00/2019",
+    //valuePayable: 0.0,
+    //currentDebt: 0.0,
     payment: {
-      valuePaid: 0.0,
+      valuePaid: 36,
       paymentDate: "00/00/2019",
-      FormOfPayment: "DepositoBB",
+      //FormOfPayment: "DepositoBB",
     },
     additional: {
       notes: "Notas",
@@ -59,13 +54,13 @@ export default [
   {
     name: "Igor",
     lastName: "Ramon",
-    enteredInto: "00/00/2019",
-    valuePayable: 0.0,
-    currentDebt: 0.0,
+    //enteredInto: "00/00/2019",
+    //valuePayable: 0.0,
+    //currentDebt: 0.0,
     payment: {
-      valuePaid: 0.0,
-      paymentDate: "00/00/2019",
-      FormOfPayment: "DepositoBB",
+      valuePaid: 36,
+      //paymentDate: "00/00/2019",
+      //FormOfPayment: "DepositoBB",
     },
     additional: {
       notes: "Notas",
