@@ -14,6 +14,7 @@ const Login = () => {
             <Field name="email" />
             <ErrorMessage component="span" name="email"></ErrorMessage>
           </div>
+          <button type="submit">Entrar</button>
         </Form>
       </Formik>
     </Container>
