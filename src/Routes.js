@@ -6,6 +6,7 @@ import Dashboard from './pages/Dashboard/index';
 import Login from './pages/Login';
 import Register from './pages/Registration';
 import NotFound from './pages/NotFound';
+import PrivateRoute from './components/PrivateRoute/index';
 
 import history from './App/history';
 
@@ -14,10 +15,10 @@ const Routes = () => {
     <Router history={history}>
       <Switch>
         <Route component={Home} exact path="/" />
-        <Route component={Dashboard} path="/dashboard" />
+        <PrivateRoute component={Dashboard} path="/dashboard" />
         <Route component={Register} path="/register" />
         <Route component={Login} path="/login" />
-        <Route component={NotFound} />
+        <PrivateRoute component={NotFound} />
       </Switch>
     </Router>
   );
