@@ -1,16 +1,17 @@
 import React from 'react';
 
 import imgHome from '../../assets/grup.png';
-// import { Container } from './styles';
+
+import { ImgHome } from './styles';
 
 function Home() {
   const mystyle = {
-    width: '50vw',
-    height: '99vh',
+    width: '30vw',
+    height: '70vh',
   };
   return (
     <>
-      <img src={imgHome} alt="grupo" style={mystyle} />
+      <ImgHome src={imgHome} alt="grupo" style={mystyle} />
     </>
   );
 }

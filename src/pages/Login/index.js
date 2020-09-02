@@ -2,12 +2,22 @@ import React from 'react';
 
 import axios from 'axios';
 
+import imgLogin from '../../assets/login.png';
+
 import {
   Container,
-  TitleLogin,
+  Title,
+  SubTitle,
   FieldLogin,
   ErrorMessageSpan,
   ButtonLogin,
+  DivLeftColumn,
+  DivRightColumn,
+  RememberDiv,
+  InputPassword,
+  LinkPassword,
+  SpanPassword,
+  ImgLogin,
 } from './styles';
 import { Formik, Form } from 'formik';
 import * as yup from 'yup';
@@ -32,31 +42,50 @@ const Login = () => {
 
   return (
     <Container>
-      <TitleLogin>Login</TitleLogin>
-      <Formik
-        initialValues={{}}
-        onSubmit={handleSubmit}
-        validationSchema={validations}
-      >
-        <Form>
-          <div>
-            <FieldLogin name="email" type="email" />
-            <br></br>
-            <ErrorMessageSpan component="span" name="email" />
-          </div>
+      <DivLeftColumn>
+        <Title primary>Bem-vindo</Title>
+        <SubTitle>Faça o login e tenha acesso ao controle spotify</SubTitle>
+        <ImgLogin alt="img" src={imgLogin} />
+      </DivLeftColumn>
 
-          <div className="Login-Group">
-            <FieldLogin
-              name="password"
-              type="password"
-              className="Login-Field"
-            />
+      <DivRightColumn>
+        <Title>Login</Title>
+        <Formik
+          initialValues={{}}
+          onSubmit={handleSubmit}
+          validationSchema={validations}
+        >
+          <Form>
+            <div>
+              <FieldLogin name="email" type="email" placeholder="Email" />
+              <br></br>
+              <ErrorMessageSpan component="span" name="email" />
+            </div>
+
+            <div className="Login-Group">
+              <FieldLogin
+                name="password"
+                type="password"
+                className="Login-Field"
+                placeholder="Senha"
+              />
+              <br></br>
+              <ErrorMessageSpan component="span" name="password" />
+            </div>
             <br></br>
-            <ErrorMessageSpan component="span" name="password" />
-          </div>
-          <ButtonLogin type="submit">Entrar</ButtonLogin>
-        </Form>
-      </Formik>
+            <RememberDiv className="remember-forgot">
+              <label>
+                <InputPassword type="checkbox" name="show-password" />
+                <SpanPassword>Lembre-me</SpanPassword>
+              </label>
+
+              <LinkPassword to="#">Esqueceu a Senha?</LinkPassword>
+            </RememberDiv>
+
+            <ButtonLogin type="submit">Entrar</ButtonLogin>
+          </Form>
+        </Formik>
+      </DivRightColumn>
     </Container>
   );
 };
